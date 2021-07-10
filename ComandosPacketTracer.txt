@@ -1,0 +1,6 @@
+Crear BGP en router:
+	router bgp "nombreBGP"
+Una vez creada la bgp se debe de asociar todas las network que posee ese router, por lo tanto con el comando:
+	network "dirección red" mask "máscara de la red"
+Posteriormente informamos sobre los vecinos, es decir la dirección IP que posee el enlace del router vecino, esto se lleva a cabo con el comando:
+	neighbor "dirección IP enlace vecino" remote-as "BGP del vecino"
